@@ -1,0 +1,443 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    border: border-box;
+    font-family: 'Satoshi', sans-serif;
+    background-color: #eff3fa;
+}
+
+#navbar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    background-image: url('images/Logo.png');
+    height: 100%;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;  
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.nav-list a i {
+    margin-right: 5px;
+}
+
+/* Hamburger Style */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-list {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+
+  .nav-list a {
+    padding: 1rem;
+    margin: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+}
+
+#tagline {
+    padding-top: 1.5rem;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #004e89;
+}
+
+.tag-subtext {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #B22222;
+}
+
+#Vision{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#Vision h3 {
+    font-size: 2rem;
+}
+
+.vis-content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#Services {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#Services h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blocks {
+    border: 1px solid rgba(0, 0, 0, 0.291);
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+}
+
+.s-icon {
+    height: 30px;
+    width: 30px;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-size: contain;
+}
+
+.gen-icon {
+    background-image: url('images/General.png');
+}
+
+.res-icon {
+    background-image: url('images/rd.png');
+}
+
+.cos-icon {
+    background-image: url('images/cd.png');
+}
+
+.orth-icon {
+    background-image: url('images/orth.png');
+}
+
+.rct-icon {
+    background-image: url('images/rct.png');
+}
+
+.oral-icon {
+    background-image: url('images/os.png');
+}
+
+.blocks h3 {
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.blocks p {
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 425;
+    color: rgba(0, 0, 0, 0.676);
+}
+
+#Dentist {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#Dentist h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about-d {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dentist-photo {
+    background-image: url('/images/Misbah.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    height: 22.5rem;
+    width: 22.5rem;
+}
+
+.dentist-info {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 400px;
+    width: 700px;
+}
+
+.dentist-info h3 {
+    font-size: 1.8rem;
+    color: #023d6a;
+}
+
+.dentist-info h5 {
+    font-size: 1.25rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #B22222;
+}
+
+.dentist-info p {
+    font-size: 1.25rem;
+    padding-bottom: 20px;
+}
+
+#appointment-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#apt-box {
+    border: #004e89 2px solid;
+    border-radius: 25px;
+    width: 80%;
+    height: 300px;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#apt-box h5 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#apt-box button {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    background-color: #022586;
+    color: white;
+    border-radius: 35px;
+}
+
+.venue-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.map-box {
+  flex: 1 1 40%;
+  background-color: #065735;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.map-content {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.map-content .icon {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+.contact-us {
+  flex: 1 1 50%;
+  color: #004e89;
+  margin-left: 25px;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+.contact-us h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.address-box {
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  font-weight: 450;
+  color: #B22222;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.icon-circle {
+  background-color: #023d6a;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.info-text {
+  font-size: 1.2rem;
+  color: #B22222;
+}
+
+.phone {
+  font-weight: 700;
+  color: #B22222;
+}
+
+.footer {
+  color: #004e89;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 30px;
+}
+
+.footer-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.footer-content .tagline {
+  font-size: 1.5rem;
+  color: #B22222;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #023d6a;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a i {
+    background: transparent;
+}
+
+.icon:hover {
+  background-color: #023d6ae6;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #B22222;
+}
+
+.contact-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap-reverse;
+  margin-top: 20px;
+  flex-direction: row-reverse;
+}
+
+.social-box {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.social-content {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+}

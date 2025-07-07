@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="navbar"> 
+  <div class="logo">
+    <div class="logo-text"></div>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <nav class="nav-list" id="nav-links">
+    <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+    <a href="services.html"><i class="fa-solid fa-user-doctor"></i>Services</a>
+    <a href="location.html"><i class="fa-solid fa-location-crosshairs"></i>Location</a>
+    <a href="contact-us.html"><i class="fa-solid fa-phone"></i>Contact Us</a>
+  </nav>
+</header>
+
+    <section id="Services">
+        <h1>Our Services</h1>
+            <div class="services-blocks">
+                <div class="blocks">
+                    <div class="gen-icon s-icon"></div>
+                        <h3>General Dentistry</h3>
+                    <p>Routine Check-ups, Rvg, Scaling & Polishing and preventive care to maintain oral health</p>
+                </div>
+
+                <div class="blocks">
+                    <div class="res-icon s-icon"></div>
+                        <h3>Restorative Dentistry</h3>
+                    <p>Fillings, Crowns & Bridges, Dentures, Implants, Full mouth rehabilitations to restore damaged or missing teeth</p>
+                </div>
+
+                <div class="blocks">
+                    <div class="cos-icon s-icon"></div>
+                        <h3>Cosmetic Dentistry</h3>
+                    <p>Teeth Whitening, Laminates and Smile Makeovers to enhance your smile</p> 
+                </div>
+
+                <div class="blocks">
+                    <div class="orth-icon s-icon"></div>
+                        <h3>Orthodontics</h3>
+                    <p>Braces and Clear aligners to correct misaligned teeth and improved bite</p>
+                </div>
+
+                <div class="blocks">
+                    <div class="rct-icon s-icon"></div>
+                        <h3>Root Canal Treatment</h3>
+                    <p>Pain-relieving procedure to treat infected or damaged teeth</p>
+                </div>
+
+                <div class="blocks">
+                    <div class="oral-icon s-icon"></div>
+                        <h3>Oral Surgery</h3>
+                    <p>Tooth Extractions, Wisdom Teeth Removal and other minor surgical procedures</p>
+                </div>
+            </div>
+    </section>
+
+    <hr>
+
+    <section id="Dentist">
+        <h1>Meet Our Expert Dentist</h1>
+    <div id="about-d">
+        <div class="dentist-photo"></div>
+        <div class="dentist-info">
+            <h3>Dr. Misbahuddin</h3>
+            <h5>BDS from ESIC Govt. Dental College</h5>
+            <p>With years of experience and a passion for creating healthy smiles, Dr. Misbahuddin is a trusted name in dental care. He is an Ex-Resident of ESIC Medical College, Faridabad, and a consultant at Shaheen Health Care, Okhla. Dr. Misbahuddin combines a gentle approach with a commitment to using the latest dental technologies to ensure the best outcomes for his patients.</p>
+
+            <p>His philosophy is rooted in "Traditional Care with Modern Dentistry," focusing on preventive measures and patient education.</p>
+        </div>
+    </div>
+    </section>
+
+    <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
